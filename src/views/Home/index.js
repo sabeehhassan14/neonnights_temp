@@ -252,7 +252,7 @@ function Home() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    let customUrl = `https://neonnights.co.nz/thankyou?text=${inputText}&color=${neonColor}&font=${neonFont}&cutType=${cutType}&size=${sizeStandard}&firstName=${firstName}&lastName=${lastName}&email=${email}`;
+    let customUrl = `https://neonnights.co.nz/thankyou?text=${inputText}&color=${neonColor}&font=${neonFont}&size=${sizeStandard}&firstName=${firstName}&lastName=${lastName}&email=${email}`;
     console.log("customUrl :: ", customUrl);
     setTimeout(() => {
       window.open(customUrl, "_self");
@@ -508,7 +508,7 @@ function Home() {
             </a>
           </div>
 
-          <div ref={customizeSection2} className="sub-section">
+          {/*<div ref={customizeSection2} className="sub-section">
             <div className="inner-container">
               <h1 className="customize-title center">
                 Specify your preferred method for cutting the backboard?
@@ -636,7 +636,8 @@ function Home() {
             >
               <span></span>Scroll
             </a>
-          </div>
+                  </div> */}
+
           {/*  ###Note : Commented the Code For the Future Build  */}
           {/*<div ref={customizeSection3} className="sub-section">
             <div className="inner-container">
