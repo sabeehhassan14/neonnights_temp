@@ -283,7 +283,11 @@ input {
   &.sub {
     padding-top: 45px;
     font-size: 14px;
-    bottom: 32px;
+    bottom: 0px;
+
+    @media(max-width: 675px) {
+      bottom: 32px;
+    }
 
     span {
       width: 25px;
